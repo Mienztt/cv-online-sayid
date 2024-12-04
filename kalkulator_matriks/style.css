@@ -1,0 +1,72 @@
+/* Gaya Umum */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e3a5f;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #34567c;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 2.5em;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.matrix-container {
+  margin: 20px 0;
+}
+
+.matrix-input input {
+  width: 60px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button-container button {
+  background-color: #00cc99;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #009977;
+}
+
+.result-title {
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #ffcc33;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  display: inline-block;
+  padding: 10px;
+  background-color: #1a293f;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
