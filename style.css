@@ -1,0 +1,70 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  background: #1a1a2e;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.matrix-input {
+  margin: 20px 0;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  background: #f0f0f0;
+}
+
+.operators {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #0096d6;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#output {
+  font-size: 1.2em;
+  font-weight: bold;
+}

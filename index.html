@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Matriks 2x2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kalkulator Matriks 2x2</h1>
+      <h2>Sayid Abdul Aziz</h2>
+
+      <div class="matrix-section">
+        <div>
+          <h2>Matriks A</h2>
+          <div class="matrix">
+            <input type="number" id="a11" placeholder="a11" />
+            <input type="number" id="a12" placeholder="a12" />
+            <input type="number" id="a21" placeholder="a21" />
+            <input type="number" id="a22" placeholder="a22" />
+          </div>
+        </div>
+        <div>
+          <h2>Matriks B</h2>
+          <div class="matrix">
+            <input type="number" id="b11" placeholder="b11" />
+            <input type="number" id="b12" placeholder="b12" />
+            <input type="number" id="b21" placeholder="b21" />
+            <input type="number" id="b22" placeholder="b22" />
+          </div>
+        </div>
+      </div>
+      <div class="operators">
+        <button onclick="addMatrices()">Pertambahan</button>
+        <button onclick="subtractMatrices()">Perkurangan</button>
+        <button onclick="multiplyMatrices()">Perkalian</button>
+        <button onclick="calculateDeterminant()">Determinant</button>
+        <button onclick="clearMatrix()">Clear</button>
+      </div>
+      <div id="result">
+        <h2>HASILNYA:</h2>
+        <p id="output">-</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
