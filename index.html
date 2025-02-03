@@ -1,48 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator Matriks 2x2</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>CV Online - Sayid Abdul Aziz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>Kalkulator Matriks 2x2</h1>
-      <h2>Sayid Abdul Aziz</h2>
+      <header>
+        <div class="profile">
+          <img
+            src="img/img 8.jpg"
+            alt="Foto Profil Sayid Abdul Aziz"
+            class="profile-img"
+          />
+          <h1>Sayid Abdul Aziz</h1>
+          <p>Pengajar & Hafiz Quran</p>
+        </div>
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Rancaekek, Kabupaten Bandung
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="https://wa.me/6281213706230">0812-1370-6230</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sayidaziz35@gmail.com">sayidaziz35@gmail.com</a>
+          </p>
+        </div>
+      </header>
 
-      <div class="matrix-section">
-        <div>
-          <h2>Matriks A</h2>
-          <div class="matrix">
-            <input type="number" id="a11" placeholder="a11" />
-            <input type="number" id="a12" placeholder="a12" />
-            <input type="number" id="a21" placeholder="a21" />
-            <input type="number" id="a22" placeholder="a22" />
+      <section class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya adalah seorang pengajar dan hafiz Quran dengan passion dalam
+          mendidik dan berbagi ilmu. Saya memiliki hobi mengaji, bermain futsal,
+          dan berpetualang. Saya selalu bersemangat untuk belajar hal baru dan
+          menantang diri sendiri.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Keterampilan</h2>
+        <ul>
+          <li><i class="fas fa-chalkboard-teacher"></i> Mengajar</li>
+          <li><i class="fas fa-book"></i> Hafal Quran</li>
+          <li><i class="fas fa-running"></i> Futsal</li>
+          <li><i class="fas fa-hiking"></i> Berpetualang</li>
+        </ul>
+      </section>
+
+      <section class="hobbies">
+        <h2>Hobi</h2>
+        <div class="hobby-list">
+          <div class="hobby-item">
+            <i class="fas fa-quran"></i>
+            <p>Mengaji</p>
+          </div>
+          <div class="hobby-item">
+            <i class="fas fa-futbol"></i>
+            <p>Futsal</p>
+          </div>
+          <div class="hobby-item">
+            <i class="fas fa-mountain"></i>
+            <p>Berpetualang</p>
           </div>
         </div>
-        <div>
-          <h2>Matriks B</h2>
-          <div class="matrix">
-            <input type="number" id="b11" placeholder="b11" />
-            <input type="number" id="b12" placeholder="b12" />
-            <input type="number" id="b21" placeholder="b21" />
-            <input type="number" id="b22" placeholder="b22" />
-          </div>
-        </div>
-      </div>
-      <div class="operators">
-        <button onclick="addMatrices()">Pertambahan</button>
-        <button onclick="subtractMatrices()">Perkurangan</button>
-        <button onclick="multiplyMatrices()">Perkalian</button>
-        <button onclick="calculateDeterminant()">Determinant</button>
-        <button onclick="clearMatrix()">Clear</button>
-      </div>
-      <div id="result">
-        <h2>HASILNYA:</h2>
-        <p id="output">-</p>
-      </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2023 - Sayid Abdul Aziz</p>
+      </footer>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
